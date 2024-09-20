@@ -5,6 +5,11 @@ import { getMeals } from "@/lib/meals";
 
 import classes from "./page.module.css";
 
+export const metadata = {
+    title: "All Meals",
+    description: "Browse the delicious measl shared by our vibrand community",
+};
+
 const Meals = async () => {
     const meals = await getMeals();
 
