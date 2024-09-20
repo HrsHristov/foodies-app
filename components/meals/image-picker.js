@@ -15,8 +15,8 @@ const ImagePicker = ({ label, name }) => {
         const file = event.target.files[0];
 
         if (!file) {
-            return;
             setPicketImage(null);
+            return;
         }
 
         const fileReader = new FileReader();

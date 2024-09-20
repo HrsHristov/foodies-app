@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { getMeal } from "@/lib/meals";
 import { notFound } from "next/navigation";
 
@@ -32,7 +33,6 @@ const MealDetailsPage = ({ params }) => {
                 <div className={classes.image}>
                     <Image src={meal.image} alt={meal.title} fill />
                 </div>
-
                 <div className={classes.headerText}>
                     <h1>{meal.title}</h1>
                     <p className={classes.creator}>
